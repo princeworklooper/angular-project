@@ -48,16 +48,16 @@
    <h4>{{date | date:'fullDate'}}</h4>
    <h4>{{date | date:'hh:mm:ss'}}</h4>
    <h2>{{amount | currency:'INR'}}<h2> -->
-   <h2>Hello world</h2>
+
     <div class="items">
       @for (item of productList; track item.id) {
-        <ul>
+        <div>
           <img src="{{item.thumbnail}}" alt="">
-          <li><b>Name : </b>{{item.title}}</li>
-          <li><b>Price : </b>{{item.price}}</li>
-          <li><b>Rating : </b>{{item.rating}}</li>
-          <li><b>Category : </b>{{item.category}}</li> 
-        </ul>
+          <div><b>Name : </b>{{item.title}}</div>
+          <div><b>Price : </b>{{item.price}}</div>
+          <div><b>Rating : </b>{{item.rating}}</div>
+          <div><b>Category : </b>{{item.category}}</div> 
+        </div>
       }
   </div>
 <router-outlet />
